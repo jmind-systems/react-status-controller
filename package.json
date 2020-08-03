@@ -1,6 +1,6 @@
 {
-  "name": "lib_boilerplate",
-  "version": "1.0.0",
+  "name": "@jmind.systems/react-status-controller",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,5 +30,11 @@
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.44",
+    "aphrodite": "^2.4.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1"
   }
 }
