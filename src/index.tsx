@@ -23,7 +23,7 @@ export const StatusController: React.FC<Props> = React.memo(({ statuses, error, 
   const isSuccess = statuses.every(item => item === reduxStatuses.success);
   const isError = statuses.some(item => item === reduxStatuses.error);
   const isLoading = statuses.some(item => item === reduxStatuses.loading);
-  const errorJSX = React.useMemo(() => error(), []);
+  const errorJSX = React.useMemo(() => error?.(), []);
   return (
     <React.Fragment>
       {isSuccess && children}
