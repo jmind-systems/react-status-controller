@@ -20,7 +20,7 @@ type Props = {
 }
 
 export const StatusController: React.FC<Props> = React.memo(({ statuses, error, reduxStatuses, children, loaderSettings, Loader }) => {
-  const isSuccess = statuses.every(item => item === reduxStatuses.success);
+  const isSuccess = statuses.every(item => item === reduxStatuses.success  );
   const isError = statuses.some(item => item === reduxStatuses.error);
   const isLoading = statuses.some(item => item === reduxStatuses.loading) && !isError;
   const errorJSX = React.useMemo(() => error?.(), []);
