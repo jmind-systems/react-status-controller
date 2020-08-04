@@ -8,7 +8,8 @@
         }
       }
     ],
-    "@babel/preset-typescript"
+    "@babel/preset-typescript",
+    "@babel/react"
   ],
   "plugins": [
     ["module-resolver", {

@@ -13,7 +13,7 @@ type Props = {
 }
 
 export const Loader: React.FC<Props> = ({ styles: customStyles, color, size }) => (
-  <div className={css(styles.root(customStyles)._)}>
+  <div className={css(styles.root(customStyles)._)} data-testid="loader">
     <div className={css(styles.ldsEllipsis(size)._)}>
       {Array(4)
         .fill(null)
