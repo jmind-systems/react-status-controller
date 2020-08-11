@@ -1,12 +1,18 @@
 {
   "name": "@jmind.systems/react-status-controller",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "build": "rm -rf ./dist && webpack --mode development --config ./webpack.config.js && cp package.json dist/ && cp README.md dist/"
   },
+  "keywords": [
+    "react",
+    "react-status-controller",
+    "react-render-controller",
+    "status-controller"
+  ],
   "author": "R3tter",
   "license": "MIT",
   "jest": {

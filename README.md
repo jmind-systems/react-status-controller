@@ -2,13 +2,7 @@
 
 Usage example 
 
-```
-  // status from redux
-  const getUsersStatus = useSelector(selectUsersStatus); 
-  <StatusController statuses=[getUsersStatus]>
-    Some content
-  </StatusController>
-```
+[codesandbox](https://codesandbox.io/s/musing-feather-1t0xl?file=/src/App.js)
 
 ### Docs
  1. statuses - statuses array from redux state
