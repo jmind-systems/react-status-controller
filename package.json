@@ -1,6 +1,6 @@
 {
   "name": "@jmind.systems/react-status-controller",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -39,8 +39,6 @@
     "@testing-library/react": "^10.4.7",
     "@types/react": "^16.9.44",
     "aphrodite": "^2.4.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "prop-types": "^15.7.2"
   }
 }
