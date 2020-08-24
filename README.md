@@ -2,7 +2,7 @@
 
 Usage example 
 
-[codesandbox](https://codesandbox.io/s/musing-feather-1t0xl?file=/src/App.js)
+[codesandbox](https://codesandbox.io/s/modest-cache-hknp6?file=/src/App.js)
 
 ### Docs
  1. statuses - statuses array from redux state
