@@ -1,5 +1,5 @@
 # React-status-controller
-
+**[aphrodite](https://www.npmjs.com/package/aphrodite) is required for React-status-controller to work**
 Usage example 
 
 [codesandbox](https://codesandbox.io/s/modest-cache-hknp6?file=/src/App.js)
