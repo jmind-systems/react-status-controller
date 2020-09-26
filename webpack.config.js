@@ -32,6 +32,11 @@ module.exports = {
       commonjs: 'react',
       commonjs2: 'react',
       amd: 'react'
+    },
+    'aphrodite/no-important': {
+      commonjs: 'aphrodite/no-important',
+      commonjs2: 'aphrodite/no-important',
+      amd: 'aphrodite/no-important'
     }
   },
   optimization: {
