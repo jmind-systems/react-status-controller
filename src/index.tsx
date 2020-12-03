@@ -7,7 +7,7 @@ import { Loader } from 'components/Loader';
 
 
 type Props = {
-  children: React.ReactNode;
+  children: any;
   statuses: Array<string>;
   reduxStatuses?: Statuses;
   loaderSettings: {
@@ -24,9 +24,10 @@ export const StatusController: React.FC<Props> = React.memo(({ statuses, error, 
   const isError = statuses.some(item => item === reduxStatuses.error);
   const isLoading = statuses.some(item => item === reduxStatuses.loading) && !isError;
   const errorJSX = React.useMemo(() => error?.(), [isError, error]);
+  const content = React.useCallback(() => typeof children === 'function' ? children() : children,[children])
   return (
     <React.Fragment>
-      {isSuccess && children}
+      {isSuccess && content()}
       {isError && errorJSX}
       {isLoading && <Loader {...loaderSettings} />}
     </React.Fragment>
@@ -34,7 +35,7 @@ export const StatusController: React.FC<Props> = React.memo(({ statuses, error, 
 })
 
 StatusController.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.any.isRequired,
   statuses: PropTypes.arrayOf(PropTypes.string).isRequired,
   reduxStatuses: PropTypes.any,
   loaderSettings: PropTypes.any,
