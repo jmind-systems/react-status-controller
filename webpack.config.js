@@ -25,7 +25,8 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     library: '@jmind.systems/react-status-controller',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    globalObject: `(typeof self !== 'undefined' ? self : this)`
   },
   externals: {
     react: {
